@@ -11,7 +11,7 @@
        </head> 
          <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap-theme-dist-cosmos.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -27,6 +27,12 @@
     padding: 200px;
 }
 
+.bs-docs-sidebar.affix {
+    position: fixed;
+    top: 20px;
+    float:right;
+}
+
 
         </style>
 
@@ -35,14 +41,20 @@
       <div class="container-fluid">
  
  <div class="row">
- <div class="col-md-3">
-  <ul>
-    <li><a href="#page1">Page 1</a></li>
-    <li><a href="#page2">Page 2</a></li>
-    <li><a href="#page3">Page 3</a></li>
-    <li><a href="#page4">Page 4</a></li>
-    <li><a href="#page5">Page 5</a></li>
-  </ul>
+ <div class="col-md-3" class="text-center" style="text-align:center;">
+  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix affix-top">
+            <ul class="nav bs-docs-sidenav">
+
+                
+    <li><a href="#page1">One</a></li>
+   <li><a href="#page2">Two</a></li>
+    <li><a href="#page3">Three</a></li>
+   <li><a href="#page4">Four</a></li>    
+   <li><a href="#page5">Five</a></li>
+
+            </ul>
+
+          </nav>
 </div>
 
 <div id="content" class="col-md-9" data-spy="scroll" data-target="#navbar">
