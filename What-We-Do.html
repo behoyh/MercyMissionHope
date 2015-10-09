@@ -1,85 +1,85 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-theme-dist-cosmos.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      position: relative;
+  }
+  ul.nav-pills {
+      top: 20px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}
   
-  <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
-        <meta charset="utf-8">
-        <title>Bootply snippet - Bootstrap div scroller template animated</title>
-        <meta name="generator" content="Bootply">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Bootstrap Navbar full width form, full page height divs. Bootstrap nav that contains a fluid search form that takes up the remaining (full width) ">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
-       </head> 
-         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="bootstrap-theme-dist-cosmos.min.css">
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    #mainbin
+    {
+      width:100%!important;
+    }
+  }
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3 hidden-print hidden-xs hidden-sm" id="myScrollspy" >
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Section 4-1</a></li>
+            <li><a href="#section42">Section 4-2</a></li>                     
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainbin" class="col-sm-9">
+      <div id="section1">    
+        <h1>Section 1</h1>
         
+      </div>
+      <div id="section2"> 
+        <h1>Section 2</h1>
+       
+      <div id="section3">         
+        <h1>Section 3</h1>
         
-        <style type="text/css">
-
-.page {
-    border: 1px solid #ddd;
-    border-width: 1px 0;
-    background: #f7f7f7;
-    margin: 20px 0;
-    padding: 200px;
-}
-
-.bs-docs-sidebar.affix {
-    position: fixed;
-    top: 20px;
-    float:right;
-}
-
-
-        </style>
-
-    
-    <body>
-      <div class="container-fluid">
- 
- <div class="row">
- <div class="col-md-3" class="text-center" style="text-align:center;">
-  <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix affix-top">
-            <ul class="nav bs-docs-sidenav">
-
-                
-    <li><a href="#page1">One</a></li>
-   <li><a href="#page2">Two</a></li>
-    <li><a href="#page3">Three</a></li>
-   <li><a href="#page4">Four</a></li>    
-   <li><a href="#page5">Five</a></li>
-
-            </ul>
-
-          </nav>
-</div>
-
-<div id="content" class="col-md-9" data-spy="scroll" data-target="#navbar">
-
-  <div id="page1" class="page">
-    <h1>Page 1</h1>
-  </div>
-
-  <div id="page2" class="page">
-    <h1>Page 2</h1>
-  </div>
-
-  <div id="page3" class="page">
-    <h1>Page 3</h1>
-  </div>
-
-  <div id="page4" class="page">
-    <h1>Page 4</h1>
-  </div>
-
-  <div id="page5" class="page">
-    <h1>Page 5</h1>
-  </div>
-</div>
- </div>
+      </div>
+      <div id="section41">         
+        <h1>Section 4-1</h1>
+        
+      </div>      
+      <div id="section42">         
+        <h1>Section 4-2</h1>
+       
+      </div>
     </div>
+  </div>
+</div>
+
 </body>
-</html>
+</html>                                		
