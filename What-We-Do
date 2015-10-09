@@ -1,61 +1,23 @@
-<html lang="en"><head>
+<html lang="en">
+  
+  <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Bootply snippet - Bootstrap Section scroller template animated</title>
+        <title>Bootply snippet - Bootstrap div scroller template animated</title>
         <meta name="generator" content="Bootply">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Bootstrap Navbar full width form, full page height sections. Bootstrap nav that contains a fluid search form that takes up the remaining (full width) ">
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"/>
-        <!-- Latest compiled and minified CSS -->
+        <meta name="description" content="Bootstrap Navbar full width form, full page height divs. Bootstrap nav that contains a fluid search form that takes up the remaining (full width) ">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+       </head> 
+         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         
-        <!--[if lt IE 9]>
-          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
-
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
         
         <style type="text/css">
-body {
-    padding-top: 40px;
-    font: normal 13px 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-#navbar {
-    border-bottom: 1px solid red;
-    background: #ddd;
-    width: 100%;
-    top: 0;
-    position: fixed;
-}
-
-#navbar li {
-    padding: 10px;
-    float: left;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: #000;
-}
-
-#navbar .active a {
-    color: red;
-}
-
-/* Remove this if you want to try $('body').scrollspy(); */
-#content {
-    overflow-y: scroll;
-}
 
 .page {
     border: 1px solid #ddd;
@@ -67,15 +29,13 @@ body {
 
 
         </style>
-    </head>
-    
 
     
     <body>
-      <div class="container">
+      <div class="container-fluid">
  
  <div class="row">
- 
+ <div class="col-md-3">
   <ul>
     <li><a href="#page1">Page 1</a></li>
     <li><a href="#page2">Page 2</a></li>
@@ -83,30 +43,31 @@ body {
     <li><a href="#page4">Page 4</a></li>
     <li><a href="#page5">Page 5</a></li>
   </ul>
-
-
-<div id="content" data-spy="scroll" data-target="#navbar">
-  <section id="page1" class="page">
-    <h1>Page 1</h1>
-  </section>
-
-  <section id="page2" class="page">
-    <h1>Page 2</h1>
-  </section>
-
-  <section id="page3" class="page">
-    <h1>Page 3</h1>
-  </section>
-
-  <section id="page4" class="page">
-    <h1>Page 4</h1>
-  </section>
-
-  <section id="page5" class="page">
-    <h1>Page 5</h1>
-  </section>
 </div>
 
+<div id="content" class="col-md-9" data-spy="scroll" data-target="#navbar">
+
+  <div id="page1" class="page">
+    <h1>Page 1</h1>
+  </div>
+
+  <div id="page2" class="page">
+    <h1>Page 2</h1>
+  </div>
+
+  <div id="page3" class="page">
+    <h1>Page 3</h1>
+  </div>
+
+  <div id="page4" class="page">
+    <h1>Page 4</h1>
+  </div>
+
+  <div id="page5" class="page">
+    <h1>Page 5</h1>
+  </div>
+</div>
  </div>
     </div>
-</body></html>
+</body>
+</html>
